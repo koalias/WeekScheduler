@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Scheduler</title>
+</head>
+<body>
+    <header class="jumbotron">
+        <h1 class="display-3">Work Day Scheduler</h1>
+        <p class="lead">A simple calendar app for scheduling your work day</p>
+        <button id="clearCalendarBtn">clear calendar</button>
+    </header>
+  <div class="calendar-container">
+      <h2 class="date"></h2>
+      <div class="calendar">
+          <div class="empty"></div>
+          <div class="idkyet">
+              <div class="col col-1">Sunday</div>
+              <div class="col col-2">Monday</div>
+              <div class="col col-3">Tuesday</div>
+              <div class="col col-4">Wednesday</div>
+              <div class="col col-5">Thursday</div>
+              <div class="col col-6">Friday</div>
+              <div class="col col-7">Saturday</div>
+          </div>
+
+          <div class="times">
+              <div class="row row-1">5 AM</div>
+              <div class="row row-2">6 AM</div>
+              <div class="row row-3">7 AM</div>
+              <div class="row row-4">8 AM</div>
+              <div class="row row-5 hour">9 AM</div>
+              <div class="row row-6">10 AM</div>
+              <div class="row row-7">11 AM</div>
+              <div class="row row-8">12 PM</div>
+              <div class="row row-9">1 PM</div>
+              <div class="row row-10">2 PM</div>
+              <div class="row row-11">3 PM</div>
+              <div class="row row-12">4 PM</div>
+              <div class="row row-13">5 PM</div>
+              <div class="row row-14">6 PM</div>
+              <div class="row row-15">7 PM</div>
+              <div class="row row-16">8 PM</div>
+              <div class="row row-17">9 PM</div>
+              <div class="row row-18">10 PM</div>
+              <div class="row row-19">11 PM</div>
+              <div class="row row-20">12 AM</div>
+              <div class="row row-21">1 AM</div>
+              <div class="row row-22">2 AM</div>
+              <div class="row row-23">3 AM</div>
+              <div class="row row-24">4 AM</div>
+          </div>
+
+          <div class="content">
+              <div id="1" class="1"></div>
+              <div id="2" class="1"></div>
+              <div id="3" class="1"></div>
+              <div id="4" class="1"></div>
+              <div id="5" class="1"></div>
+              <div id="6" class="1"></div>
+              <div id="7" class="1"></div>
+              <div id="8" class="1"></div>
+              <div id="9" class="1"></div>
+              <div id="10" class="1"></div>
+              <div id="11" class="1"></div>
+              <div id="12" class="1"></div>
+              <div id="13" class="1"></div>
+              <div id="14" class="1"></div>
+              <div id="15" class="1"></div>
+              <div id="16" class="1"></div>
+              <div id="17" class="1"></div>
+              <div id="18" class="1"></div>
+              <div id="19" class="1"></div>
+              <div id="20" class="1"></div>
+              <div id="21" class="1"></div>
+              <div id="22" class="1"></div>
+              <div id="23" class="2"></div>
+              <div id="24" class="2"></div>
+              <div id="25" class="2"></div>
+              <div id="26" class="2"></div>
+              <div id="27" class="2"></div>
+              <div id="28" class="2"></div>
+              <div id="29" class="2"></div>
+              <div id="30" class="2"></div>
+              <div id="31" class="2"></div>
+              <div id="32" class="2"></div>
+              <div id="33" class="2"></div>
+              <div id="34" class="2"></div>
+              <div id="35" class="2"></div>
+              <div id="36" class="2"></div>
+              <div id="37" class="2"></div>
+              <div id="38" class="2"></div>
+              <div id="39" class="2"></div>
+              <div id="40" class="2"></div>
+              <div id="41" class="2"></div>
+              <div id="42" class="2"></div>
+              <div id="43" class="2"></div>
+              <div id="44" class="2"></div>
+              <div id="45" class="2"></div>
+              <div id="46" class="2"></div>
+              <div id="47" class="2"></div>
+              <div id="48" class="2"></div>
+              <div id="49" class="3"></div>
+              <div id="50" class="3"></div>
+              <div id="51" class="3"></div>
+              <div id="52" class="3"></div>
+              <div id="53" class="3"></div>
+              <div id="54" class="3"></div>
+              <div id="55" class="3"></div>
+              <div id="56" class="3"></div>
+              <div id="57" class="3"></div>
+              <div id="58" class="3"></div>
+              <div id="59" class="3"></div>
+              <div id="60" class="3"></div>
+              <div id="61" class="3"></div>
+              <div id="62" class="3"></div>
+              <div id="63" class="3"></div>
+              <div id="64" class="3"></div>
+              <div id="65" class="3"></div>
+              <div id="66" class="3"></div>
+              <div id="67" class="3"></div>
+              <div id="68" class="3"></div>
+              <div id="69" class="3"></div>
+              <div id="70" class="3"></div>
+              <div id="71" class="3"></div>
+              <div id="72" class="3"></div>
+              <div id="73" class="4"></div>
+              <div id="74" class="4"></div>
+              <div id="75" class="4"></div>
+              <div id="76" class="4"></div>
+              <div id="77" class="4"></div>
+              <div id="78" class="4"></div>
+              <div id="79" class="4"></div>
+              <div id="80" class="4"></div>
+              <div id="81" class="4"></div>
+              <div id="82" class="4"></div>
+              <div id="83" class="4"></div>
+              <div id="84" class="4"></div>
+              <div id="85" class="4"></div>
+              <div id="86" class="4"></div>
+              <div id="87" class="4"></div>
+              <div id="88" class="4"></div>
+              <div id="89" class="4"></div>
+              <div id="90" class="4"></div>
+              <div id="91" class="4"></div>
+              <div id="92" class="4"></div>
+              <div id="93" class="4"></div>
+              <div id="94" class="4"></div>
+              <div id="95" class="4"></div>
+              <div id="96" class="4"></div>
+              <div id="97" class="5"></div>
+              <div id="98" class="5"></div>
+              <div id="99" class="5"></div>
+              <div id="100" class="5"></div>
+              <div id="101" class="5"></div>
+              <div id="102" class="5"></div>
+              <div id="103" class="5"></div>
+              <div id="104" class="5"></div>
+              <div id="105" class="5"></div>
+              <div id="106" class="5"></div>
+              <div id="107" class="5"></div>
+              <div id="108" class="5"></div>
+              <div id="109" class="5"></div>
+              <div id="110" class="5"></div>
+              <div id="111" class="5"></div>
+              <div id="112" class="5"></div>
+              <div id="113" class="5"></div>
+              <div id="114" class="5"></div>
+              <div id="115" class="5"></div>
+              <div id="116" class="5"></div>
+              <div id="117" class="5"></div>
+              <div id="118" class="5"></div>
+              <div id="119" class="5"></div>
+              <div id="120" class="5"></div>
+              <div id="121" class="6"></div>
+              <div id="122" class="6"></div>
+              <div id="123" class="6"></div>
+              <div id="124" class="6"></div>
+              <div id="125" class="6"></div>
+              <div id="126" class="6"></div>
+              <div id="127" class="6"></div>
+              <div id="128" class="6"></div>
+              <div id="129" class="6"></div>
+              <div id="130" class="6"></div>
+              <div id="131" class="6"></div>
+              <div id="132" class="6"></div>
+              <div id="133" class="6"></div>
+              <div id="134" class="6"></div>
+              <div id="135" class="6"></div>
+              <div id="136" class="6"></div>
+              <div id="137" class="6"></div>
+              <div id="138" class="6"></div>
+              <div id="139" class="6"></div>
+              <div id="140" class="6"></div>
+              <div id="141" class="6"></div>
+              <div id="142" class="6"></div>
+              <div id="143" class="6"></div>
+              <div id="144" class="6"></div>
+              <div id="145" class="7"></div>
+              <div id="146" class="7"></div>
+              <div id="147" class="7"></div>
+              <div id="148" class="7"></div>
+              <div id="149" class="7"></div>
+              <div id="150" class="7"></div>
+              <div id="151" class="7"></div>
+              <div id="152" class="7"></div>
+              <div id="153" class="7"></div>
+              <div id="154" class="7"></div>
+              <div id="155" class="7"></div>
+              <div id="156" class="7"></div>
+              <div id="157" class="7"></div>
+              <div id="158" class="7"></div>
+              <div id="159" class="7"></div>
+              <div id="160" class="7"></div>
+              <div id="161" class="7"></div>
+              <div id="162" class="7"></div>
+              <div id="163" class="7"></div>
+              <div id="164" class="7"></div>
+              <div id="165" class="7"></div>
+              <div id="166" class="7"></div>
+              <div id="167" class="7"></div>
+              <div id="168" class="7"></div>
+          </div>
+      </div>  
+  </div>
+
+  <div class="modal-container">
+    <div class="modal">
+        <span class='modal-container--close'>&times;</span>
+          <h3>Book a class!</h3>
+          <form class='modal-container--form'>
+            <label for="start-select">Start time</label>
+            <select id='start-select'>
+                <option value="05 AM">5 AM</option>
+                <option value="06 AM">6 AM</option>
+                <option value="07 AM">7 AM</option>
+                <option value="08 AM">8 AM</option>
+                <option value="09 AM">9 AM</option>
+                <option value="10 AM">10 AM</option>
+                <option value="11 AM">11 AM</option>
+                <option value="12 PM">12 PM</option>
+                <option value="01 PM">1 PM</option>
+                <option value="02 PM">2 PM</option>
+                <option value="03 PM">3 PM</option>
+                <option value="04 PM">4 PM</option>
+                <option value="05 PM">5 PM</option>
+                <option value="06 PM">6 PM</option>
+                <option value="07 PM">7 PM</option>
+                <option value="08 PM">8 PM</option>
+                <option value="09 PM">9 PM</option>
+                <option value="10 PM">10 PM</option>
+                <option value="11 PM">11 PM</option>
+                <option value="12 AM">12 AM</option>
+                <option value="01 AM">1 AM</option>
+                <option value="02 AM">2 AM</option>
+                <option value="03 AM">3 AM</option>
+                <option value="04 AM">4 AM</option>
+            </select>
+            <label for="end-select">End time</label>
+            <select id='end-select'>
+                <option value="05 AM">5 AM</option>
+                <option value="06 AM">6 AM</option>
+                <option value="07 AM">7 AM</option>
+                <option value="08 AM">8 AM</option>
+                <option value="09 AM">9 AM</option>
+                <option value="10 AM">10 AM</option>
+                <option value="11 AM">11 AM</option>
+                <option value="12 PM">12 PM</option>
+                <option value="01 PM">1 PM</option>
+                <option value="02 PM">2 PM</option>
+                <option value="03 PM">3 PM</option>
+                <option value="04 PM">4 PM</option>
+                <option value="05 PM">5 PM</option>
+                <option value="06 PM">6 PM</option>
+                <option value="07 PM">7 PM</option>
+                <option value="08 PM">8 PM</option>
+                <option value="09 PM">9 PM</option>
+                <option value="10 PM">10 PM</option>
+                <option value="11 PM">11 PM</option>
+                <option value="12 AM">12 AM</option>
+                <option value="01 AM">1 AM</option>
+                <option value="02 AM">2 AM</option>
+                <option value="03 AM">3 AM</option>
+                <option value="04 AM">4 AM</option>
+            </select>
+            <textarea name="" id="reservation"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
